@@ -1,3 +1,24 @@
+// GSAP
+gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
+
+// FADE ANIMATION 1
+const t1 = gsap.timeline({ defaults: { duration: 0.25 } });
+t1.from('.logo', { opacity: 0, y: -50 })
+    .from('.header__list', { opacity: 0, y: -50 })
+    .from('.header__link1', { opacity: 0, y: -50 })
+    .from('.header__link2', { opacity: 0, y: -50 })
+    .from('.header__link3', { opacity: 0, y: -50 })
+    .from('.header__link4', { opacity: 0, y: -50 })
+
+// FADE ANIMATION 2
+const t2 = gsap.timeline({ defaults: { duration: 0.50 } });
+t2.from('.main__info1', { opacity: 0, x: -90,})
+
+// FADE ANIMATION 3
+const t3 = gsap.timeline({ defaults: { duration: 0.50 } });
+t3.from('.main__info3', { opacity: 0, x: 90,})
+
+// GAMBURGER
 const hamburger = document.querySelector('.hamburger');
 const menubar = document.querySelector('.menubar');
 
@@ -9,6 +30,7 @@ hamburger.addEventListener('click', () => {
 console.log(hamburger);
 console.log(menubar);
 
+// MAIN
 const mainInfo1 = document.querySelector('.main__info1');
 const mainInfo2 = document.querySelector('.main__info2');
 const mainInfo3 = document.querySelector('.main__info3');

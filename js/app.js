@@ -1,5 +1,37 @@
+// AOS
 AOS.init();
 
+// GSAP
+gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
+
+// FADE ANIMATION 1
+const t1 = gsap.timeline({ defaults: { duration: 0.25 } });
+t1.from('.logo', { opacity: 0, y: -50 })
+    .from('.header__list', { opacity: 0, y: -50 })
+    .from('.header__link1', { opacity: 0, y: -50 })
+    .from('.header__link2', { opacity: 0, y: -50 })
+    .from('.header__link3', { opacity: 0, y: -50 })
+    .from('.header__link4', { opacity: 0, y: -50 })
+
+// FADE ANIMATION 2
+const t2 = gsap.timeline({ duration: 1 });
+t2.from('.main__content', { opacity: 0, duration: 0.2 })
+
+
+// FADE ANIMATION 3
+const t3 = gsap.timeline({ duration: 1 });
+t3.from('.home', { x: 50, opacity: 0, duration: 0.2 })
+
+// FADE ANIMATION 4
+const t4 = gsap.timeline({ duration: 0.50 });
+t4.from('.video', { x: -50, opacity: 0, duration: 0.2 })
+
+// FADE ANIMATION 5
+const t5 = gsap.timeline({ duration: 0.70 })
+t5.from('.footer__follow', { x: -70, opacity: 0, })
+    .from('.footer__info', { x: 0, opacity: 0, duration: 0.5 })
+
+// Swiper
 var swiper = new Swiper(".mySwiper", {
     navigation: {
         nextEl: ".swiper-button-next",
@@ -9,6 +41,7 @@ var swiper = new Swiper(".mySwiper", {
 
 console.log(swiper);
 
+// Gamburger
 const mobileNav = document.querySelector(".hamburger");
 const navbar = document.querySelector(".menubar");
 
@@ -20,6 +53,7 @@ mobileNav.addEventListener("click", () => toggleNav());
 console.log(mobileNav);
 console.log(navbar);
 
+// Main
 const mainBtn = document.querySelector('.button-37');
 const mainInfo = document.querySelectorAll('.main__info');
 const mainImgs = document.querySelectorAll('.main__info-img');

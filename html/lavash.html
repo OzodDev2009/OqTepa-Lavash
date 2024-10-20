@@ -21,20 +21,20 @@
         <!-- Navigation - START -->
         <nav class="container" style="height: 100%;">
             <div class="logo">
-                <img src="../img/Lavash Logo.png" alt="logo">
+                <img src="../img/Lavash Logo.png" alt="logo" class="logo">
             </div>
 
-            <ul>
-                <li>
+            <ul class="header__list">
+                <li class="header__link1">
                     <a href="../index.html">Menu</a>
                 </li>
-                <li>
+                <li class="header__link2">
                     <a href="./buyurtma.html">Buyurtma Berish</a>
                 </li>
-                <li>
+                <li class="header__link3">
                     <a href="./yetkazib.html">Yetkazib Berish</a>
                 </li>
-                <li>
+                <li class="header__link4">
                     <a href="./lavash.html">OqTepa Lavash</a>
                 </li>
             </ul>
@@ -88,15 +88,26 @@
 
     <!-- Footer - START -->
     <footer style="background: red;">
-        <section class="footer__info container" style="display: flex; justify-content: center; align-items: center; gap: 30px; height: 300px;">
-            <h1 style="color: white; font-size: 20px; font-weight: 700;">
+        <section class="footer__info container"
+            style="display: flex; justify-content: center; align-items: center; gap: 30px; height: 300px;">
+            <h1 style="color: white; font-size: 20px; font-weight: 700;" class="footer__text">
                 Biz Sizlarni Oq Tepa Lavashda Kutib Qolamiz
             </h1>
 
-            <img src="../img/Lavash Logo.png" alt="Lavash" width="150" height="150" style="background: white; border-radius: 30px;">
+            <img src="../img/Lavash Logo.png" alt="Lavash" width="150" height="150"
+                style="background: white; border-radius: 30px;" class="lavash__img">
         </section>
     </footer>
     <!-- Footer - END -->
+
+    <!-- GSAP -->
+    <script src="../libs/gsap.min.js"></script>
+
+    <!-- ScrollSmooter -->
+    <script src="../libs/ScrollSmoother.min.js"></script>
+
+    <!-- ScrollTrigger -->
+    <script src="../libs/ScrollTrigger.min.js"></script>
 
     <script src="../js/lavash.js"></script>
 </body>
