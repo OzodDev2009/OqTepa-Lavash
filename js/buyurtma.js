@@ -1,3 +1,11 @@
+// LOADER
+window.addEventListener("load", function () {
+    setTimeout(() => {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("content").style.display = "block";
+    }, 200);
+});
+
 // GSAP
 gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
 
@@ -12,11 +20,11 @@ t1.from('.logo', { opacity: 0, y: -50 })
 
 // FADE ANIMATION 2
 const t2 = gsap.timeline({ defaults: { duration: 0.50 } });
-t2.from('.main__info1', { opacity: 0, x: -90,})
+t2.from('.main__info1', { opacity: 0, x: -90, })
 
 // FADE ANIMATION 3
 const t3 = gsap.timeline({ defaults: { duration: 0.50 } });
-t3.from('.main__info3', { opacity: 0, x: 90,})
+t3.from('.main__info3', { opacity: 0, x: 90, })
 
 // GAMBURGER
 const hamburger = document.querySelector('.hamburger');

@@ -1,3 +1,11 @@
+// LOADER
+window.addEventListener("load", function () {
+    setTimeout(() => {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("content").style.display = "block";
+    }, 200);
+});
+
 // GSAP
 gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
 

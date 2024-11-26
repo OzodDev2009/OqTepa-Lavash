@@ -1,3 +1,11 @@
+// LOADER
+window.addEventListener("load", function () {
+    setTimeout(() => {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("content").style.display = "block";
+    }, 200);
+});
+
 // AOS
 AOS.init();
 
@@ -33,6 +41,7 @@ t5.from('.footer__follow', { x: -70, opacity: 0, })
 
 // Swiper
 var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 20,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
